@@ -7,6 +7,7 @@ public class pooNation : MonoBehaviour
 
     public int childrenCount;
     public GameObject interactor;
+    public GameObject secondWave;
     public bool openDoor;
     public bool stopMusic;
     public bool nextWave;
@@ -16,7 +17,7 @@ public class pooNation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        secondWave.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,7 +46,7 @@ public class pooNation : MonoBehaviour
 
                 if (nextWave)
                 {
-
+                    secondWave.SetActive(true);
                 }
 
                 if (stopMusic)
