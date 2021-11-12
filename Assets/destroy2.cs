@@ -21,4 +21,20 @@ public class destroy2 : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

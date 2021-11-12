@@ -18,6 +18,10 @@ TagManager:
   - enemyhand
   - smallshot
   - enemyspawn
+  - playerRocket
+  - smallrock
+  - smallRock
+  - rocketammo
   layers:
   - Default
   - TransparentFX
