@@ -8,6 +8,7 @@ public class pooNation : MonoBehaviour
     public int childrenCount;
     public GameObject interactor;
     public GameObject secondWave;
+    public GameObject Music;
     public bool openDoor;
     public bool stopMusic;
     public bool nextWave;
@@ -51,7 +52,7 @@ public class pooNation : MonoBehaviour
 
                 if (stopMusic)
                 {
-
+                    Music.GetComponent<spawn>().audioSource.Stop();
                 }
 
                 poo = true;

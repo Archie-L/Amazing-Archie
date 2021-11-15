@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroy2 : MonoBehaviour
+public class destroy3 : MonoBehaviour
 {
     public float lifeSpan;
     private float lifeStart;
@@ -19,22 +19,6 @@ public class destroy2 : MonoBehaviour
         if (Time.time > (lifeSpan + lifeStart))
         {
             Destroy(this.gameObject);
-        }
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "player")
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag == "player")
-        {
-            Destroy(gameObject);
         }
     }
 }

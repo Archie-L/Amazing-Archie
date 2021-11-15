@@ -32,7 +32,7 @@ public class die1 : MonoBehaviour
 
             Debug.Log(health);
 
-            if (health < 0)
+            if (health <= 0)
             {
                 health = 0;
 
@@ -56,7 +56,7 @@ public class die1 : MonoBehaviour
 
             Debug.Log(health);
 
-            if (health < 0)
+            if (health <= 0)
             {
                 health = 0;
 

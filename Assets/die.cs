@@ -43,7 +43,7 @@ public class die : MonoBehaviour
 
             Debug.Log(health);
 
-            if (health < 0)
+            if (health <= 0)
             {
                 health = 0;
 
@@ -67,11 +67,11 @@ public class die : MonoBehaviour
         {
             audioSource.Play();
 
-            health -= 1;
+            health -= 4;
 
             Debug.Log(health);
 
-            if (health < 0)
+            if (health <= 0)
             {
                 health = 0;
 

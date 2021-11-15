@@ -5,6 +5,7 @@ using UnityEngine;
 public class spawn : MonoBehaviour
 {
     public GameObject enemy;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -16,6 +17,8 @@ public class spawn : MonoBehaviour
         if(other.gameObject.tag == "enemyspawn")
         {
             enemy.SetActive(true);
+
+            audioSource.Play();
         }
     }
 }
