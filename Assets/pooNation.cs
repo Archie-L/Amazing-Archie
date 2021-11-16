@@ -52,7 +52,7 @@ public class pooNation : MonoBehaviour
 
                 if (stopMusic)
                 {
-                    Music.GetComponent<spawn>().audioSource.Stop();
+                    Music.GetComponent<AudioSource>().Stop();
                 }
 
                 poo = true;

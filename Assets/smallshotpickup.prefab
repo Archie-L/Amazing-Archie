@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2905970705388255115}
   - component: {fileID: 2157942869839601980}
   - component: {fileID: 6154533279086096296}
-  - component: {fileID: 8467589172557967108}
+  - component: {fileID: -41494240781977857}
   - component: {fileID: 2795414817473785139}
   m_Layer: 0
   m_Name: smallshotpickup
@@ -210,7 +210,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8467589172557967108
+--- !u!114 &-41494240781977857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3698836855948842590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5baac1382fa576a4c9416f45cc4dfe77, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5c6102dc34fe94da23c192c77f496d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 10

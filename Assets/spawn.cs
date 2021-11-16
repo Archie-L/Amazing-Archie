@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawn : MonoBehaviour
 {
     public GameObject enemy;
-    public AudioSource audioSource;
+    public GameObject Music;
 
     void Start()
     {
@@ -14,11 +14,13 @@ public class spawn : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "enemyspawn")
+        if(other.gameObject.tag == "player")
         {
             enemy.SetActive(true);
 
-            audioSource.Play();
+            Destroy(this.gameObject);
+
+            Music.GetComponent<AudioSource>().Play();
         }
     }
 }
