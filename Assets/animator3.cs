@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class animator2 : MonoBehaviour
+public class animator3 : MonoBehaviour
 {
     Animator anim;
 
@@ -73,10 +73,10 @@ public class animator2 : MonoBehaviour
         }
     }
 
-	void OnTriggerEnter(Collider other)
-	{
-        if (other.gameObject.tag == "rocketammo")
-		{
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "plasmaammo")
+        {
             if (currentAmmo < maxAmmo)
             {
                 currentAmmo = currentAmmo + 4;
@@ -95,7 +95,7 @@ public class animator2 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "smallrock")
+        if (other.gameObject.tag == "smallplasma")
         {
             if (currentAmmo < maxAmmo)
             {
@@ -115,9 +115,4 @@ public class animator2 : MonoBehaviour
             }
         }
     }
-
-    public void VelOff()
-	{
-        Vel = 0;
-	}
 }
