@@ -28,7 +28,7 @@ public class die1 : MonoBehaviour
     {
         if (Collision.gameObject.tag == "bullet")
         {
-            health--;
+            health -= 1;
 
             Debug.Log(health);
 

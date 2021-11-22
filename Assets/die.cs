@@ -39,7 +39,7 @@ public class die : MonoBehaviour
         {
             audioSource.Play();
 
-            health--;
+            health -= 1;
 
             Debug.Log(health);
 
