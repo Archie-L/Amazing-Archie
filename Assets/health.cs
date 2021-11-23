@@ -69,6 +69,11 @@ public class health : MonoBehaviour
             currentHealth = currentHealth - 50f;
         }
 
+        if (coll.gameObject.tag == "explosion")
+        {
+            currentHealth = currentHealth - 40f;
+        }
+
         if (coll.gameObject.tag == "largehealth")
         {
             if (currentHealth < maxHealth)

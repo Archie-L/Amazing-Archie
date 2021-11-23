@@ -90,5 +90,29 @@ public class die : MonoBehaviour
                 }
             }
         }
+
+        if (Collision.gameObject.tag == "playerExplosion")
+        {
+            health -= 4;
+
+            Debug.Log(health);
+
+            if (health <= 0)
+            {
+                health = 0;
+
+                for (int i = 0; i < gibCount; i++)
+                {
+                    Destroy(gameObject);
+
+                    gibs[i] = Random.rotation;
+                    GameObject gib = Instantiate(chunk, chunkExit.position, chunkExit.transform.rotation);
+                    gib.transform.rotation = Quaternion.RotateTowards(gib.transform.rotation, gibs[i], spreadAngle);
+                    gib.GetComponent<Rigidbody>().AddForce(gib.transform.forward * Vel);
+
+                    i++;
+                }
+            }
+        }
     }
 }

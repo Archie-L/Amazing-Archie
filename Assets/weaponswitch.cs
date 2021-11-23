@@ -33,7 +33,7 @@ public class weaponswitch : MonoBehaviour
             wep3.SetActive(false);
         }
 
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha3))
 		{
             wep1.SetActive(false);
             wep2.SetActive(false);

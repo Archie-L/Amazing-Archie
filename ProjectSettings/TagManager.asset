@@ -22,6 +22,8 @@ TagManager:
   - smallrock
   - smallRock
   - rocketammo
+  - explosion
+  - playerExplosion
   layers:
   - Default
   - TransparentFX

@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2152652828679280528}
-  - component: {fileID: 1626946235449167142}
+  - component: {fileID: 7611522902939199864}
   - component: {fileID: 1626946235449167145}
   - component: {fileID: 1626946235449167144}
   - component: {fileID: 1626946235449167147}
@@ -192,7 +192,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1626946235449167142
+--- !u!114 &7611522902939199864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,14 +201,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1626946235449167146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c0f105f2d5f904e9268ad986d0a442, type: 3}
+  m_Script: {fileID: 11500000, guid: bf89d396e17755c4a88d42e95776f3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  Vel: 100
-  gibCount: 5
-  spreadAngle: 10
-  chunk: {fileID: 8484097983379171696, guid: 0c7de0653a8feb149b94deebf8d53676, type: 3}
+  Vel: 0
+  gibCount: 1
+  spreadAngle: 0
+  chunk: {fileID: 8258058154775301739, guid: dbe1cba8913f558489167e610067fd89, type: 3}
   chunkExit: {fileID: 4657428355832044914}
 --- !u!114 &1626946235449167145
 MonoBehaviour:
