@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class opendoor : MonoBehaviour
 {
-    Animator anim;
+    public GameObject door;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     public void OpenDoor()
     {
-        anim.SetBool("open 0", true);
+        door.SetActive(false);
     }
 
     public void CloseDoor()
     {
-        anim.SetBool("open 0", false);
+        door.SetActive(true);
     }
 }

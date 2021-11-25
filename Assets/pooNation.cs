@@ -7,9 +7,11 @@ public class pooNation : MonoBehaviour
 
     public int childrenCount;
     public GameObject interactor;
+    public GameObject interactor2;
     public GameObject secondWave;
     public GameObject Music;
     public bool openDoor;
+    public bool closeDoor;
     public bool stopMusic;
     public bool nextWave;
 
@@ -43,6 +45,11 @@ public class pooNation : MonoBehaviour
                 if (openDoor)
                 {
                     interactor.GetComponent<opendoor>().OpenDoor();
+                }
+
+                if (closeDoor)
+                {
+                    interactor2.GetComponent<opendoor>().CloseDoor();
                 }
 
                 if (nextWave)

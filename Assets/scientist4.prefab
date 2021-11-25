@@ -298,7 +298,7 @@ MonoBehaviour:
   health: 2
   Vel: 100
   gibCount: 3
-  spreadAngle: 2
+  spreadAngle: 360
   chunk: {fileID: 8484097983379171696, guid: 0c7de0653a8feb149b94deebf8d53676, type: 3}
   chunkExit: {fileID: 6176184434289600742}
   audioSource: {fileID: 1428544723711670633}
@@ -318,7 +318,7 @@ MonoBehaviour:
   health: 2
   Vel: 100
   gibCount: 1
-  spreadAngle: 2
+  spreadAngle: 360
   chunk: {fileID: 3698836855948842590, guid: cd509a2665e14a747a431f87ff67ac77, type: 3}
   chunkExit: {fileID: 6176184434289600742}
 --- !u!114 &2704140398700443799
@@ -336,7 +336,7 @@ MonoBehaviour:
   health: 2
   Vel: 100
   gibCount: 1
-  spreadAngle: 2
+  spreadAngle: 360
   chunk: {fileID: 1715422607627942922, guid: ac417c0c46b2b93498974f1de6c07f5d, type: 3}
   chunkExit: {fileID: 6176184434289600742}
 --- !u!136 &4152560630204039162

@@ -24,6 +24,7 @@ TagManager:
   - rocketammo
   - explosion
   - playerExplosion
+  - deathbarrier
   layers:
   - Default
   - TransparentFX

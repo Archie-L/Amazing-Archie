@@ -442,7 +442,7 @@ MonoBehaviour:
   health: 20
   Vel: 100
   gibCount: 5
-  spreadAngle: 10
+  spreadAngle: 360
   chunk: {fileID: 3601739159100794026, guid: 149544f4dce3e914c8d5f06ace155b27, type: 3}
   chunkExit: {fileID: 665059964721988739}
 --- !u!136 &2856430718140131255
@@ -489,7 +489,7 @@ MonoBehaviour:
   health: 20
   Vel: 100
   gibCount: 2
-  spreadAngle: 10
+  spreadAngle: 360
   chunk: {fileID: 1715422607627942922, guid: ac417c0c46b2b93498974f1de6c07f5d, type: 3}
   chunkExit: {fileID: 665059964721988739}
 --- !u!114 &2556363803088518717
@@ -507,7 +507,7 @@ MonoBehaviour:
   health: 20
   Vel: 100
   gibCount: 2
-  spreadAngle: 10
+  spreadAngle: 360
   chunk: {fileID: 3698836855948842590, guid: cd509a2665e14a747a431f87ff67ac77, type: 3}
   chunkExit: {fileID: 665059964721988739}
 --- !u!195 &2856430718140131253

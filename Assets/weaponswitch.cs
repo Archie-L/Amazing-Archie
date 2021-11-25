@@ -11,9 +11,9 @@ public class weaponswitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        wep1.SetActive(true);
+        wep1.SetActive(false);
         wep2.SetActive(false);
-        wep3.SetActive(false);
+        wep3.SetActive(true);
     }
 
     // Update is called once per frame

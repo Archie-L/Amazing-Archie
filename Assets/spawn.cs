@@ -6,13 +6,20 @@ public class spawn : MonoBehaviour
 {
     public GameObject enemy;
     public GameObject Music;
+    public GameObject interactor;
+
+    public bool closeDoor;
 
     void Start()
     {
         enemy.SetActive(false);
     }
 
-    void OnTriggerEnter(Collider other)
+	void Update()
+	{
+
+    }
+	void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "player")
         {
@@ -21,6 +28,11 @@ public class spawn : MonoBehaviour
             Destroy(this.gameObject);
 
             Music.GetComponent<AudioSource>().Play();
+
+            if (closeDoor)
+            {
+                interactor.GetComponent<opendoor>().CloseDoor();
+            }
         }
     }
 }
