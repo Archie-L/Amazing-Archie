@@ -59,7 +59,7 @@ public class health : MonoBehaviour
 
         if (coll.gameObject.tag == "deathbarrier")
         {
-            SceneManager.LoadScene("save");
+            currentHealth = 0f;
         }
 
         if (coll.gameObject.tag == "enemyrocket")
