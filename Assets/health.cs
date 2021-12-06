@@ -44,7 +44,7 @@ public class health : MonoBehaviour
 
         if (coll.gameObject.tag == "enemyhand")
         {
-            currentHealth = currentHealth - 50f;
+            currentHealth = currentHealth - 25f;
         }
     }
 
