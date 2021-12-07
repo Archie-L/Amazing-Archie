@@ -113,7 +113,7 @@ public class Movement : MonoBehaviour
 	{
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit raycastHit))
+            if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit raycastHit, 50f))
             {
                 if (raycastHit.transform.tag == "grapple")
 				{
