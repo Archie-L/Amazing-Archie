@@ -1804,12 +1804,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6119685816492392919}
+  - component: {fileID: 806456147789257734}
   - component: {fileID: 6892387040838998882}
-  - component: {fileID: 6892387040838998880}
   - component: {fileID: 6892387040838998883}
   - component: {fileID: 1634284284653019461}
   - component: {fileID: 3306880937791390142}
-  - component: {fileID: 6892387040838998881}
   - component: {fileID: 6892387040838998886}
   m_Layer: 0
   m_Name: untitled
@@ -1836,6 +1835,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806456147789257734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6892387040838998893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f2c5f464871454f8be4c53b1d0529d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6892387040838998883}
+  Player: {fileID: 0}
+  shootDist: 50
+  stopDist: 20
+  WalkSpeed: 5
+  StopSpeed: 0.5
+  health: 20
+  Vel: 100
+  gibCount: 3
+  spreadAngle: 360
+  chunk: {fileID: 4337204678010532586, guid: b1ea1b4d96c9faa44bd96423016c4859, type: 3}
+  chunkExit: {fileID: 3446219171772529537}
+  gun: {fileID: 2238648608037366672}
+  gun2: {fileID: 3446219170246767871}
+  CanFire: 0
 --- !u!95 &6892387040838998882
 Animator:
   serializedVersion: 3
@@ -1855,20 +1881,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6892387040838998880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6892387040838998893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6d087c5aa1c7f43bc91a113d253300, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 6892387040838998883}
-  Player: {fileID: 0}
 --- !u!195 &6892387040838998883
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1926,24 +1938,6 @@ MonoBehaviour:
   gibCount: 2
   spreadAngle: 360
   chunk: {fileID: 1715422607627942922, guid: ac417c0c46b2b93498974f1de6c07f5d, type: 3}
-  chunkExit: {fileID: 3446219171772529537}
---- !u!114 &6892387040838998881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6892387040838998893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c0f105f2d5f904e9268ad986d0a442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  Vel: 100
-  gibCount: 4
-  spreadAngle: 360
-  chunk: {fileID: 4337204678010532586, guid: b1ea1b4d96c9faa44bd96423016c4859, type: 3}
   chunkExit: {fileID: 3446219171772529537}
 --- !u!65 &6892387040838998886
 BoxCollider:

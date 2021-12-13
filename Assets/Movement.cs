@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
     private Vector3 hookshotPosition;
     private float hookshotSize;
 
+    public bool mouseMove = true;
+
     private enum State
 	{
         Normal,
@@ -58,13 +60,17 @@ public class Movement : MonoBehaviour
 
     private void HandleCharacterLook()
     {
-        float lookX = Input.GetAxisRaw("Mouse X");
-        float lookY = Input.GetAxisRaw("Mouse Y");
+        if (mouseMove == true)
+        {
+            float lookX = Input.GetAxisRaw("Mouse X");
+            float lookY = Input.GetAxisRaw("Mouse Y");
 
-        transform.Rotate(new Vector3(0f, lookX * mouseSensitivity, 0f), Space.Self);
-        cameraVerticalAngle -= lookY * mouseSensitivity;
-        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -90f, 90f);
-        playerCamera.transform.localEulerAngles = new Vector3(cameraVerticalAngle, 0, 0);
+            transform.Rotate(new Vector3(0f, lookX * mouseSensitivity, 0f), Space.Self);
+            cameraVerticalAngle -= lookY * mouseSensitivity;
+            cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -90f, 90f);
+            playerCamera.transform.localEulerAngles = new Vector3(cameraVerticalAngle, 0, 0);
+
+        }
     }
 
     private void HandleCharacterMovement()

@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1110390407633924004}
-  - component: {fileID: 298142051692000538}
-  - component: {fileID: 298142051692000536}
+  - component: {fileID: 797506164588205626}
   - component: {fileID: 298142051692000740}
   - component: {fileID: 298142051692000537}
   - component: {fileID: 1965075476168432197}
@@ -40,7 +39,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &298142051692000538
+--- !u!114 &797506164588205626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,29 +48,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 298142051692000542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c0f105f2d5f904e9268ad986d0a442, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e188041481ac4bbf772b85a000e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 298142051692000537}
+  Player: {fileID: 0}
+  shootDist: 50
+  stopDist: 20
+  WalkSpeed: 7
+  StopSpeed: 0.5
   health: 30
   Vel: 100
   gibCount: 5
   spreadAngle: 360
   chunk: {fileID: 4337204678010532586, guid: b1ea1b4d96c9faa44bd96423016c4859, type: 3}
   chunkExit: {fileID: 8031371009391680100}
---- !u!114 &298142051692000536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298142051692000542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6d087c5aa1c7f43bc91a113d253300, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 298142051692000537}
-  Player: {fileID: 0}
+  gun: {fileID: 1122233059810933147}
+  CanFire: 0
 --- !u!65 &298142051692000740
 BoxCollider:
   m_ObjectHideFlags: 0

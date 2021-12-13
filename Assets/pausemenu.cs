@@ -9,6 +9,7 @@ public class pausemenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject playerMenuUI;
+    public GameObject Player;
 
 	void Start()
 	{
@@ -37,6 +38,7 @@ public class pausemenu : MonoBehaviour
         playerMenuUI.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Player.GetComponent<Movement>().mouseMove = true;
     }
     void Pause()
     {
@@ -44,6 +46,7 @@ public class pausemenu : MonoBehaviour
         playerMenuUI.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        Player.GetComponent<Movement>().mouseMove = false;
     }
 
     public void LoadMenu()
